@@ -13,6 +13,10 @@
 		AB0642C6281A7B48003E6424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0642C4281A7B48003E6424 /* Main.storyboard */; };
 		AB0642C8281A7B49003E6424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB0642C7281A7B49003E6424 /* Assets.xcassets */; };
 		AB0642CB281A7B49003E6424 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0642C9281A7B49003E6424 /* LaunchScreen.storyboard */; };
+		AB0642D3281A7C24003E6424 /* ListPokemonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0642D2281A7C24003E6424 /* ListPokemonsTableViewController.swift */; };
+		AB0642D8281ADDFB003E6424 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0642D7281ADDFB003E6424 /* JsonData.swift */; };
+		AB53CDEB282B819400632EAF /* Informs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53CDEA282B819400632EAF /* Informs.swift */; };
+		AB7CA958283604CE00BB19BD /* ImgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7CA957283604CE00BB19BD /* ImgViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		AB0642C7281A7B49003E6424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB0642CA281A7B49003E6424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB0642CC281A7B49003E6424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB0642D2281A7C24003E6424 /* ListPokemonsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPokemonsTableViewController.swift; sourceTree = "<group>"; };
+		AB0642D7281ADDFB003E6424 /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
+		AB53CDEA282B819400632EAF /* Informs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Informs.swift; sourceTree = "<group>"; };
+		AB7CA957283604CE00BB19BD /* ImgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		AB0642BD281A7B48003E6424 /* LostPokemons */ = {
 			isa = PBXGroup;
 			children = (
+				AB0642D6281A93C9003E6424 /* Modules */,
+				AB0642D5281A939D003E6424 /* ViewControllers */,
+				AB0642D4281A937E003E6424 /* Storyboards */,
 				AB0642BE281A7B48003E6424 /* AppDelegate.swift */,
 				AB0642C0281A7B48003E6424 /* SceneDelegate.swift */,
-				AB0642C2281A7B48003E6424 /* ViewController.swift */,
-				AB0642C4281A7B48003E6424 /* Main.storyboard */,
 				AB0642C7281A7B49003E6424 /* Assets.xcassets */,
-				AB0642C9281A7B49003E6424 /* LaunchScreen.storyboard */,
 				AB0642CC281A7B49003E6424 /* Info.plist */,
 			);
 			path = LostPokemons;
+			sourceTree = "<group>";
+		};
+		AB0642D4281A937E003E6424 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AB0642C4281A7B48003E6424 /* Main.storyboard */,
+				AB0642C9281A7B49003E6424 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AB0642D5281A939D003E6424 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB0642C2281A7B48003E6424 /* ViewController.swift */,
+				AB0642D2281A7C24003E6424 /* ListPokemonsTableViewController.swift */,
+				AB7CA957283604CE00BB19BD /* ImgViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AB0642D6281A93C9003E6424 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AB0642D7281ADDFB003E6424 /* JsonData.swift */,
+				AB53CDEA282B819400632EAF /* Informs.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB53CDEB282B819400632EAF /* Informs.swift in Sources */,
 				AB0642C3281A7B48003E6424 /* ViewController.swift in Sources */,
 				AB0642BF281A7B48003E6424 /* AppDelegate.swift in Sources */,
+				AB7CA958283604CE00BB19BD /* ImgViewController.swift in Sources */,
 				AB0642C1281A7B48003E6424 /* SceneDelegate.swift in Sources */,
+				AB0642D3281A7C24003E6424 /* ListPokemonsTableViewController.swift in Sources */,
+				AB0642D8281ADDFB003E6424 /* JsonData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
